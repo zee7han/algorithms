@@ -4,7 +4,6 @@ def rev_word1(string):
     # the list and join them.
     return " ".join(reversed(string.split()))
 
-
 print(rev_word1("you are here"))
 print(rev_word1("    I am here"))
 print(rev_word1("No I am not there    "))
@@ -30,8 +29,6 @@ def rev_word2(string):
         # Increase the index on every iteration.
         index += 1
     return " ".join(lst[::-1])
-
-
 
 print(rev_word2("you are here"))
 print(rev_word2("    I am here"))
@@ -61,8 +58,6 @@ def rev_word(s):
         # Here we increase the index if a whitespaces occurs
         i += 1
     return " ".join(word[::-1])
-
-
 
 print(rev_word("you are here"))
 print(rev_word("    I am here"))
