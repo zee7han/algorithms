@@ -28,7 +28,7 @@ def finder2(arr1, arr2):
     arr1.sort()
     arr2.sort()
     # Here we loop through the zip of both element
-    # zip return the tuple of element of same index from both arrays
+    # zip return the tuple of element of same index from both lists
     for num1, num2 in zip(arr1,arr2):
         if num1 != num2:
             print(f"{num1} is the missing element")

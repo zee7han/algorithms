@@ -3,7 +3,7 @@ def large_cont_sum(arr):
     # If length of list is zero return zero
     if len(arr) == 0:
         return 0
-    # Initialize the current sum and max_sum to first element of array
+    # Initialize the current sum and max_sum to first element of list
     max_sum = current_sum = arr[0]
     # Loop through the element of the list from second to last bcoz we consider the first element already
     for num in arr[1:]:

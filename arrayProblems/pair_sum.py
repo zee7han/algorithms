@@ -2,7 +2,7 @@
 def pair_sum(array, k):
     l = len(array)
     count = 0
-    # Here we are just going through the nested loop to add the elements of array and check its presence
+    # Here we are just going through the nested loop to add the elements of list and check its presence
     for i in range(l-2):
         for j in range(i+1, l):
             if (array[i] + array[j]) == k:
