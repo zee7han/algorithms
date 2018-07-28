@@ -1,16 +1,16 @@
 class Node(object):
     def __init__(self, value):
         self.value = value
-        self.nextNode = None
+        self.next_node = None
 
 a = Node(1)
 b = Node(2)
 c = Node(3)
 
-a.nextNode = b
-b.nextNode = c
+a.next_node = b
+b.next_node = c
 
 print(a.value)
-print(a.nextNode.value)
+print(a.next_node.value)
 print(b.value)
-print(b.nextNode.value)
+print(b.next_node.value)
