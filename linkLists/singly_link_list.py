@@ -1,3 +1,4 @@
+# It's a simple class for implement the singly link list node.
 class Node(object):
     def __init__(self, value):
         self.value = value

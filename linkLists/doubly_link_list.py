@@ -1,3 +1,4 @@
+# It's a simple class for creating the DoublyLinkListNode.
 class DoublyLinkListNode(object):
     def __init__(self,value):
         self.value = value
