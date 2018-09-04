@@ -1,7 +1,7 @@
 # here we implement the permutation function to get all possible permutation
 # of string.
 def permute(s):
-    # Initialize a empty list for storung the result.
+    # Initialize a empty list for storing the result.
     out = []
     # Handling the base case and add the string of len 1 to list.
     if len(s) == 1:
