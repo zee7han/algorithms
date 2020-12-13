@@ -35,6 +35,7 @@ def dyn_coin(target, coins, known_results):
         # Here loop through every coin in list which is less than the target and
         # recusively call the function for target-i.
         for i in [c for c in coins if c <= target]:
+            print("ii",i)
             num_coins = 1 + dyn_coin(target-i,coins,known_results)
             # If num_coins less than min_coins then set its result in cache or
             #lookup table min_coins to num_coins.

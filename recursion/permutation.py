@@ -13,6 +13,7 @@ def permute(s):
             # recursively call the permute and loop through each perm to
             # get one permutation.
             for perm in permute(s[:i]+s[i+1:]):
+                print(perm)
                 out += [let + perm]
     return out
 
