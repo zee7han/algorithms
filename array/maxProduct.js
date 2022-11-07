@@ -4,10 +4,9 @@ function maxProduct(arr, n) {
     for(let i=0; i<n; i++){
         let mul = arr[i]
         for(let j= i+1; j<n; j++) {
-            result = Math.max(mul, result)
             mul *= arr[j]
+            result = Math.max(mul, result)
         }
-        result = Math.max(mul, result)
     }
     return result
 }

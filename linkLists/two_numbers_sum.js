@@ -29,9 +29,8 @@ let f = new ListNode(4,null)
 d.next = e
 e.next = f
 
-function addTwoNumbers(l1, l2) {
+function addTwoNumbers(l1, l2, carry = false) {
     let output = null
-    const carry = arguments[2]
     
     if(l1 || l2){
         const val1 = l1 ? l1.val : 0
@@ -40,11 +39,9 @@ function addTwoNumbers(l1, l2) {
         const nex2 = l2 ? l2.next : null
 
         let output_val = carry?(val1 + val2 + 1):(val1 + val2)
-        output  = new ListNode(output_val%10)
-        output.next = addTwoNumbers(nex1,nex2,output_val>9)
+        output  = new ListNode(output_val%10, addTwoNumbers(nex1,nex2,output_val>9))
     } else if(carry){
-        output = new ListNode(1)
-        output.next = null
+        output = new ListNode(1, null)
     }
     return output
 };
