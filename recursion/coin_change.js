@@ -12,10 +12,10 @@ function dyn_coin_change(target, coins, memory) {
             if (coins[c] <= target) {
                 num_coins = 1 + dyn_coin_change(target - coins[c], coins, memory)
             }
-                    if (num_coins < min_coins) {
-                        min_coins = num_coins
-                        memory[target] = min_coins
-                    }
+            if (num_coins < min_coins) {
+                min_coins = num_coins
+                memory[target] = min_coins
+            }
         }
     }
     return min_coins
