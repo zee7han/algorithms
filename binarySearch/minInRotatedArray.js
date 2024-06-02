@@ -10,7 +10,7 @@ function minRotatedArray(arr) {
         } else {
             let mid = Math.floor((r+l)/2)
             res = Math.min(arr[mid],res)
-            if(arr[mid] >= arr[l]){
+            if(arr[l] <= arr[mid]){
                 l = mid+1
             } else {
                 r = mid-1
